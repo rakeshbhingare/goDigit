@@ -8,6 +8,8 @@ import { CarModelComponent } from './car-model/car-model.component';
 import { CarVarientComponent } from './car-varient/car-varient.component';
 import { CarFuelTypeComponent } from './car-fuel-type/car-fuel-type.component';
 import { CarPaymentDetailsComponent } from './car-payment-details/car-payment-details.component';
+import { CarBrandComponent } from './car-brand/car-brand.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,14 +19,17 @@ import { CarPaymentDetailsComponent } from './car-payment-details/car-payment-de
     CarModelComponent,
     CarVarientComponent,
     CarFuelTypeComponent,
-    CarPaymentDetailsComponent
+    CarPaymentDetailsComponent,
+    CarBrandComponent
   ],
   imports: [
     CommonModule,
-    CarRoutingModule
+    CarRoutingModule,
+    FormsModule,
   ],
   exports:[
-    CarComponent
+    CarComponent,
+    CarModelComponent,
   ]
 })
 export class CarModule { }

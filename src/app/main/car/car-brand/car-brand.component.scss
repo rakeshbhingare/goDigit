@@ -1,0 +1,10 @@
+td{
+    cursor: pointer;
+    font-weight: 700;
+    transform: transition 2.4s;
+}
+
+tr:hover{
+    border-color:gold;
+    transition: scale(1.2);
+}

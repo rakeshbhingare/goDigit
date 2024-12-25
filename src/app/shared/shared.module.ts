@@ -10,6 +10,7 @@ import { BikeComponent } from '../main/bike/bike.component';
 import { BikeModule } from '../main/bike/bike.module';
 import { CarModelComponent } from '../main/car/car-model/car-model.component';
 import { CarModule } from '../main/car/car.module';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -23,7 +24,8 @@ import { CarModule } from '../main/car/car.module';
   ],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   exports:[
     HeaderComponent,
